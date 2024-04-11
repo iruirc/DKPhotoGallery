@@ -13,13 +13,13 @@ let package = Package(
             targets: ["DKPhotoGallery"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kirualex/SwiftyGif.git", from: "5.3.0"),
-        .package(url: "https://github.com/SDWebImage/SDWebImage", from: "5.10.0"),
+        .package(url: "https://github.com/iruirc/SwiftyGif.git", branch("VSDC")),
+        .package(url: "https://github.com/iruirc/SDWebImage.git", branch("VSDC")),
     ],
     targets: [
         .target(
             name: "DKPhotoGallery",
-            dependencies: ["SwiftyGif", "SDWebImage"],
+            dependencies: ["SwiftyGif-Dynamic", "SDWebImage"],
             path: "DKPhotoGallery"),
     ]
 )
