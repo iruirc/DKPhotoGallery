@@ -9,6 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "DKPhotoGallery",
+            type: .dynamic,
             targets: ["DKPhotoGallery"]),
     ],
     dependencies: [
